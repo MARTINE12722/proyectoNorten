@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="inmobiliaria Córdoba - Argentina - departamentos - casas - inmuebles - alquileres">
     <title>Norten Inmuebles</title>
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -13,10 +15,11 @@
 
 
     <header>
+        <div class="titulo">
         <img src="./assets/logo blanco2.png" alt="logo"> <a href="./info.html"></a>
 
         <h1>Servicios Inmobiliarios</h1>
-
+    </div>
         <nav>
             <ul>
                 <li class="navList"> <a href="./info.html">HOME</a></li>
@@ -70,7 +73,7 @@
                 <h3>¿Necesitas desvincularte de la administración de tu inmueble?</h3>
                 <div class="asd">
                     <figure>
-                        <img src="./assets/3.jpg" alt="">
+                        <img src="./assets/3.jpg" class="photo1" alt="">
                         <figcaption>Nosotros te brindamos dicho servicio!</figcaption>
                         <button><a href="./info.html">Ver</a>
                         </button>
@@ -79,7 +82,7 @@
 
                 <div>
                     <h3>Ubicanos en:</h3>
-                    <p>BUENOS AIRES N° 1053 PISO 1° OFICINA "F" - NUEVA CÓRDOBA, Córdoba</p>
+                    <p> BUENOS AIRES N° 1053 PISO 1° OFICINA "F" - NUEVA CÓRDOBA, Córdoba</p>
                 </div>
 
                 <div>
@@ -97,23 +100,23 @@
         <h2>Contáctate con nosotros!!</h2>
         <form action="/" method="GET">
             <h3>Datos de contacto:</h3>
-            <label class="userInfo"> Tu nombre:
-                <input type="text" name="Nombre" placeholder="Ej:Juan Carlos" required>
+            <label class="userInfo"> Nombre:
+                <input type="text" name="Nombre" placeholder="Ej: Juan Carlos" required>
 
             </label>
 
-            <label class="userInfo"> Tu apellido:
-                <input type="text" name="apellido" placeholder="Ej:Martinez" required>
+            <label class="userInfo"> Apellido:
+                <input type="text" name="apellido" placeholder="Ej: Martinez" required>
 
             </label>
 
-            <label class="userInfo"> Tu email:
-                <input type="email" name="email" placeholder="Ej:martinez@norten.com.ar" required>
+            <label class="userInfo"> email:
+                <input type="email" name="email" placeholder="Ej: martinez@norten.com.ar" required>
 
             </label>
 
-            <label class="userInfo"> Tu celular:
-                <input type="number" name="telefono" placeholder="Ej:3518062493">
+            <label class="userInfo"> Celular:
+                <input type="text" name="telefono" placeholder="Ej: 3518062493">
 
             </label>
 
@@ -141,24 +144,38 @@
     </div>
 
     <footer>
-        <img src="./assets/logo blanco2.png" alt="">
-        <p>Norten &copy; 2019</p>
-        <p>Todos los derechos reservados</p>
+        <div class="footer">
+            <div class="logofooter">
+                <img class="imgnorten" src="./assets/logo blanco2.png" alt="">
+            </div>
+            <div class="derechosreservados">
+                <p> <strong> Norten &copy; 2019 </strong></p>
+                <p> <small> Todos los derechos reservados</small></p>
 
-        <figure>
+            </div>
+            <div class="paracpi">
+                <figure>
 
-            <img src="./assets/CPI.jpg" alt="cpi" class="photo1">
-            <figcaption>Matrícula N° 4437</figcaption>
+                    <img class="imgcpi" src="./assets/CPI.jpg" alt="cpi" class="photo1">
+                    <figcaption>Matrícula N° 4437</figcaption>
+                </figure>
+            </div>
+            
 
-            <p> Seguinos en: </p>
-            <a href="https://www.instagram.com/norteninmuebles/?hl=es" target="_blank">
-                <img src="./assets/logoinsta.jpg" alt="">
-            </a>
-            <a href="https://www.facebook.com/norteninmuebles" target="_blank">
-                <img src="./assets/logoF.jpg" alt="">
-            </a>
+            <div class="seguinos">
+                <figure>
 
-        </figure>
+                    <p> Seguinos en: </p>
+                    <a href="https://www.instagram.com/norteninmuebles/?hl=es" target="_blank">
+                        <img class="logosa" src="./assets/logoIn.png" alt="">
+                    </a>
+                    <a href="https://www.facebook.com/norteninmuebles" target="_blank">
+                        <img class="logosa" src="./assets/logoF.png" alt="">
+                    </a>
+
+                </figure>
+            </div>
+        </div>
 
     </footer>
 

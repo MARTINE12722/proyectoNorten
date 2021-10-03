@@ -5,6 +5,16 @@
     padding: 0%;
     margin: 0, 5% 0, 5%;
     font-family: 'Cinzel', serif;
+    color: var(--main-light);
+
+}
+
+:root {
+    --main-oscuro: #2f2c2a;
+    --main-medium: #686767;
+    --main-marron: #814f29;
+    --main-brownlight: #a98263;
+    --main-light: #f7f6f6;
 }
 
 h2 {
@@ -15,12 +25,20 @@ h3 {
     font-size: 1.2em;
 }
 
+button a {
+    color: var(--main-oscuro);
+   
+}
+
+button:hover {
+    background-color:darkgray;
+}
 
 
 /* HEADER*/
 
 body {
-    background-color: rgb(77, 76, 76);
+    background-image: url(./assets/fondo6.jpg);
 }
 
 
@@ -28,20 +46,24 @@ body {
 header {
     position: sticky;
     top: 0;
-    background-color: rgba(224, 60, 1, 0.507);
+    background: rgb(228,112,18);
+background: radial-gradient(circle, rgba(228,112,18,0.667571252133666) 0%,
+ rgba(55,62,69,0.6787757339263831) 100%);
+    
     font-family: 'Cinzel', serif;
     z-index: 1;
     
 }
 
 header h1 {
-    font-size: 2.5em;
+    font-size: 1.8em;
     text-align: center;
+    margin: auto;
 
 }
 
 header img {
-    width: 10%;
+    width: 8%;
     margin: auto;
     display: block;
     margin-top: none;
@@ -54,12 +76,14 @@ header img {
 /*navbar*/
 ul {
     text-align: center;
+    margin: auto;
+    
 }
 
 .navList {
     display: inline;
     text-transform: capitalize;
-    font-size: 1.3em;
+    font-size: 1em;
     padding: 0% 2%;
    
 
@@ -68,12 +92,12 @@ ul {
 
 .navList a {
     text-decoration: none;
-    color: black;
+    color: rgb(236, 218, 218);
 
 }
 
 .navList:hover {
-    background-color: rgba(236, 88, 34, 0.527);
+    background-color:  rgb(228,112,18);;
     
 }
 
@@ -86,12 +110,26 @@ ul {
     justify-content: space-between;
 }
 
+.principal button {
+    width: 30%;
+    text-align: center;
+    padding: 12px 20px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2.5px 2.5px 10px 6px var (--main-oscuro);
+    color: var(--main-oscuro);
+}
+
 main {
     width: 50%;
 }
 
+
+
+
 main .photo {
     width: 600px;
+    max-width: 600px;
 }
 
 
@@ -100,8 +138,9 @@ main .photo {
 
 aside {
     width: 40%;
-    border-left: 2px solid black;
+    border-left: 2px solid var(--main-light);
     padding-left: 1%;
+    
 }
 
 aside .asd {
@@ -115,15 +154,18 @@ aside img {
 
 }
 
+
 /*form*/
 
 .contacto {
-    margin: 1em 16em 16em 16em;
+    margin: 1em 20em 20em 20em;
     border: 3px solid black;
     background-color: #a9a9a97d;
     padding: 2% 0% 2% 5%;
     box-shadow: 2.5px 2.5px 10px 6px  rgb(27 23 23 / 80%);
     margin-bottom: 3%;
+    
+    
 }
 
 form {
@@ -137,6 +179,11 @@ form label.userInfo {
     width: 80%;
 }
 
+form .citytext {
+    color: var(--main-oscuro);
+}
+
+
 form input, 
 form select,
 form textarea {
@@ -144,6 +191,7 @@ form textarea {
     margin: 8px 0;
     box-sizing: border-box;
     width: 80%;
+    color: var(--main-oscuro);
     
 }
 
@@ -153,10 +201,126 @@ form button {
     padding: 12px 20px;
     margin: auto;
     border-radius: 10px;
-    box-shadow: 2.5px 2.5px 10px 6px  rgb(27 23 23 / 80%)
+    box-shadow: 2.5px 2.5px 10px 6px  rgb(27 23 23 / 80%);
+    color: var(--main-oscuro);
     
 }
 
 button {
     cursor: pointer;
 }
+
+/* footer*/
+footer .logofooter {
+    width: 20%;
+    text-align: center;
+}
+footer .derechosreservados {
+    width: 20%;
+    text-align: center;
+}
+footer .paracpi {
+    width: 20%;
+    text-align: center;
+}
+
+footer .imgcpi {
+    width: 100%;
+}
+
+footer .logosa {
+    width: 20%;
+
+}
+
+footer .seguinos {
+    width: 20%;
+    text-align: center;
+}
+
+
+footer .imgnorten {
+    width: 50%;
+    
+}
+
+footer .footer {
+    display: flex;
+    flex-direction:inherit;
+    justify-content:space-evenly;
+    padding: 3%;
+    background: rgb(228,112,18);
+background: radial-gradient(circle, rgba(228,112,18,0.667571252133666) 0%,
+ rgba(55,62,69,0.6787757339263831) 100%);
+    max-width: 100%;
+   
+}
+
+footer figcaption {
+    font-size: 71%;
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    main .photo {
+        max-width: 450px;
+    }
+    .navList {
+        font-size: 0.8em;
+    }
+
+    .contacto {
+        margin: 1em 10em 10em 10em;
+
+    }
+
+    header h1 {
+        font-size: 1.5em;
+    }
+
+       
+    }
+
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 1.2em;
+            text-align: center;
+            
+        }
+        figcaption {
+            font-size: 0.6;
+
+        }
+        h3 {
+            font-size: 0.9em;
+            text-align: center;
+        
+        }
+        
+        .principal {
+            flex-direction: column;
+            width: 600px;
+            
+        }
+
+        main {
+            width: 100%;
+        }
+        aside   {
+            width: 100%;
+            border-left: 0;
+            border-top: 2px solid var(--main-light) ;
+        }
+        main .photo {
+            max-width: 600px;
+        }
+        aside .photo1 {
+            max-width: 600px;
+        }
+        aside img {
+            width: 600px;
+        }
+        .contacto {
+            margin: 1em 5em 5em 5em;
+
+    }
